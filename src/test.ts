@@ -5,7 +5,7 @@ async function runTests(): Promise<void> {
     const result1 = await getCurrentStock("KED089097/68/09");
     console.log(result1);
 
-    const result2 = await getCurrentStock("notfffff123");
+    const result2 = await getCurrentStock("InvalidSKU");
     console.log(result2);
   } catch (error) {
     console.log(error);
